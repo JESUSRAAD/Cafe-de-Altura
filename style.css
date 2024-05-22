@@ -6,13 +6,12 @@ body {
 nav {
   display: flex;
 
- min-height: 64px;
+  min-height: 64px;
 
   align-items: center;
   justify-content: space-around;
 
   background: #2b2a2b;
-  box-shadow: 0px 4px 4px 0px #00000008;
 }
 
 #logo {
@@ -39,31 +38,30 @@ nav {
   color: #ffffff;
 }
 
-#icon-coffeeHot {
+#export-coffeeHot {
   width: 20.53px;
   height: 24.93px;
 }
-
 #menuWrapper {
-  display: flex;
-  flex-direction: row;
-  min-width: 512px;
-  min-height: 32px;
-  gap: 16px;
-
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
 }
-li {
-  text-decoration: none;
-
+#list-menuWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  min-width: 512px;
+  min-height: 32px;
   color: #ffffff;
 }
+
+ 
+
+
 #numberPhone {
   width: 102px;
   height: 16px;
