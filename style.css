@@ -1,3 +1,7 @@
+* {
+  margin: 0%;
+}
+
 body {
   font-family: Outfit;
   margin: 0%;
@@ -7,11 +11,12 @@ nav {
   display: flex;
   color: #ffffff;
   min-height: 64px;
-
+position: fixed;
   align-items: center;
   justify-content: space-around;
-
+top: 0%;
   background: #2b2a2b;
+  width: 100vw;
 }
 
 #logo {
@@ -43,6 +48,10 @@ nav {
 }
 
 #menuWrapper {
+    gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-width: 512px;
   min-height: 32px;
 }
@@ -52,7 +61,7 @@ nav {
   align-items: center;
   gap: 16px;
 
-  padding: 0%;
+
 
   font-size: 14px;
   font-weight: 600;
@@ -60,7 +69,9 @@ nav {
 
   list-style: none;
 }
+/* #list-menuWrapper li{
 
+} */
 #frame9 {
   display: flex;
   flex-direction: row;
@@ -129,13 +140,21 @@ nav {
   line-height: 16px;
   text-align: left;
 }
+/* 
 
+
+
+
+ */
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background: #E3DED74D;
+margin-top: 64px;
   min-height: 486px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 #hero-wrapper {
   display: flex;
@@ -152,30 +171,40 @@ nav {
 
 #botton-hero {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   gap: 16px;
   width: 321px;
 }
+
 #hero-firstBotton {
+  display: flex;
+  align-items: center;
   text-align: center;
   min-width: 168px;
   min-height: 40px;
-
+  justify-content: center;
   background: #1f1815;
   color: #ffffff;
   border-radius: 4px;
 }
 #hero-secondBotton {
+  display: flex;
+  align-items: center;
   text-align: center;
   min-width: 168px;
   min-height: 40px;
-
+  justify-content: center;
   background: #2a5b45;
 
   color: #ffffff;
   border-radius: 4px;
 }
+#text-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* 
 
 
@@ -188,16 +217,15 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  gap: 24px;
   min-height: 380px;
   text-align: center;
-  gap: 24px;
+
   background-image: url(assets/img/086aa1e226e5adfe010fd0fb3ff3e2cb.jpeg);
   background-position: center;
   background-size: cover;
 }
 #titleServices {
-  /* z-index: 1; */
   color: #ffffff;
 }
 #cardServicesWrapper {
@@ -207,27 +235,36 @@ nav {
   max-width: 996px;
   min-height: 232px;
   gap: 24px;
+  /*  */
 }
 .greenBoxCard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 64px;
   min-height: 64px;
   border-radius: 20px;
-  background: #2A5B45;
-
+  background: #2a5b45;
 }
-.cardService {display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cardService {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 316px;
   height: 232px;
+  gap: 16px;
   border-radius: 8px;
-/* padding: 24px; */
+  box-shadow: 0px 1px 4px 0px #E3DED7CC;
+  border: 1px solid #F7F5F3;
+
   background-color: #ffffff;
 }
+ .cardService p {
+    font-size: 14px;
+  width: 268px;
+}
+
 /* 
 
 
@@ -235,84 +272,166 @@ nav {
 
 
  */
-#cards-news{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-min-height: 603.39px;
-gap: 40px;
+#cards-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 603.39px;
+  gap: 40px;
 }
-#titleCardsNews{
-    color: #2A5B45;
+#titleCardsNews {
+  color: #2a5b45;
 }
-#cardWrapperNews{display: flex;
-    
-    width: 1200px;
-min-height: 391.39px;
-gap: 24px;
+#cardWrapperNews {
+  display: flex;
+
+  width: 1200px;
+  min-height: 391.39px;
+  gap: 24px;
 }
-.product{display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    width:  282px;
-    min-height: 391.39px;   
-    border: 1px solid #E3DED7 ;
-    border-radius: 8px ;
-  
-}
-.botton-include{
-
-    min-width:  60px;
-min-height:  32px;
-color: white;
-background: #2A5B45B2;
-
-
-border-radius: 4px ;
-
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  width: 282px;
+  min-height: 391.39px;
+  border: 1px solid #e3ded7;
+  border-radius: 8px;
 
 }
+.botton-include {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-#linkIcon-newCards{
-display: flex;
-text-decoration: underline;
+  min-width: 60px;
+  min-height: 32px;
+  color: white;
+  background: #2a5b45b2;
+
+  border-radius: 4px;
 }
-/* 
 
-
-
- */
-
-#frequently-asks-question{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-color:#ffffff ;
-    min-height: 621px;
+#linkIcon-newCards {
+  display: flex;
+  text-decoration: underline;
+}
+.product:hover{
+    background: #F7F5F3;
+}
+.product:hover a{
     background: #2A5B45;
-
-
+    ;
 }
 
-#FAQ-wrapper{ 
-    display: flex;
+
+
+/* 
+
+
+
+ */
+
+#frequently-asks-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  min-height: 621px;
+  background: #2a5b45;
+}
+
+#FAQ-wrapper {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+  gap: 16px;
+  color: black;
+  width: 668px;
+  min-height: 425px;
+}
+.titleChevron{
+display: flex;
+
+}
+.FAQ{display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 668px;
+    min-height: 72px;
+    background: #F7F5F3;
+    border-radius: 10px ;
+}
+.FAQ h3{
 
-    min-width: 668px;
-    min-height: 425px; 
+
+    width: 620px;
+    min-height: 24px;
+    
+    justify-content: space-between;
 }
 
+.FAQ hr{
 
+opacity: 0%;
+   
+    width:  0%;
+ 
+}
+.FAQ p{
+display: none;
+    opacity: 0%;
+      
+        height: 0%;
+     
+    }
 
+    .FAQ:hover #FAQ1 {
+height: ;
 
-#linkIcon-FAQ{
-    display: flex;
-    text-decoration: underline;
 
     }
+    .FAQ:hover #FAQ2 {
+height: ;
+
+
+    }
+    .FAQ:hover #FAQ3 {
+height: ;
+
+
+    }
+
+    .FAQ:hover hr{
+        opacity: 100%;
+   
+       width: 620px;
+    }
+    .FAQ:hover p{
+        display: flex;
+        opacity: 100%;
+   
+       height: 24px;
+    }
+    .img-FAQ{
+        transition: all 1s;
+    }
+    .FAQ:hover .img-FAQ{
+        transform: rotate(10deg);
+    }
+
+
+
+#linkIcon-FAQ {
+  color: #ffffff;
+  display: flex;
+  text-decoration: underline;
+}
