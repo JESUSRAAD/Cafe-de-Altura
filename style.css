@@ -5,7 +5,7 @@ body {
 
 nav {
   display: flex;
-
+  color: #ffffff;
   min-height: 64px;
 
   align-items: center;
@@ -16,7 +16,7 @@ nav {
 
 #logo {
   display: flex;
-  flex-direction: row;
+
   min-width: 213.86px;
   min-height: 36px;
   gap: 7.33px;
@@ -34,33 +34,43 @@ nav {
   font-weight: 400;
   line-height: 35.19px;
   text-align: left;
-
-  color: #ffffff;
 }
 
 #export-coffeeHot {
   width: 20.53px;
   height: 24.93px;
+  top: -0.02px;
 }
+
 #menuWrapper {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 16px;
+  min-width: 512px;
+  min-height: 32px;
 }
 #list-menuWrapper {
   display: flex;
-  flex-direction: row;
-  gap: 16px;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+
+  padding: 0%;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+
   list-style: none;
-  min-width: 512px;
-  min-height: 32px;
-  color: #ffffff;
 }
 
- 
-
+#frame9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 288px;
+  min-height: 40px;
+  gap: 24px;
+  opacity: 0px;
+}
 
 #numberPhone {
   width: 102px;
@@ -69,7 +79,6 @@ nav {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-  text-align: left;
 }
 
 #link-numberPhone {
@@ -99,18 +108,6 @@ nav {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
-
-  color: #ffffff;
-}
-#frame9 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 288px;
-  min-height: 40px;
-  gap: 24px;
-  opacity: 0px;
 }
 #starSession {
   display: flex;
@@ -131,6 +128,191 @@ nav {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 486px;
+}
+#hero-wrapper {
+  display: flex;
+  align-items: center;
+  /*  */
+  max-width: 1200px;
+  min-height: 390px;
+  gap: 24px;
+}
+
+#pre-title {
+  color: #2a5b45;
+}
+
+#botton-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 321px;
+}
+#hero-firstBotton {
+  text-align: center;
+  min-width: 168px;
+  min-height: 40px;
+
+  background: #1f1815;
+  color: #ffffff;
+  border-radius: 4px;
+}
+#hero-secondBotton {
+  text-align: center;
+  min-width: 168px;
+  min-height: 40px;
+
+  background: #2a5b45;
 
   color: #ffffff;
+  border-radius: 4px;
 }
+/* 
+
+
+
+
+ */
+
+#cards-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 380px;
+  text-align: center;
+  gap: 24px;
+  background-image: url(assets/img/086aa1e226e5adfe010fd0fb3ff3e2cb.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+#titleServices {
+  /* z-index: 1; */
+  color: #ffffff;
+}
+#cardServicesWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 996px;
+  min-height: 232px;
+  gap: 24px;
+}
+.greenBoxCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 64px;
+  min-height: 64px;
+  border-radius: 20px;
+  background: #2A5B45;
+
+}
+.cardService {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  width: 316px;
+  height: 232px;
+  border-radius: 8px;
+/* padding: 24px; */
+  background-color: #ffffff;
+}
+/* 
+
+
+
+
+
+ */
+#cards-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+min-height: 603.39px;
+gap: 40px;
+}
+#titleCardsNews{
+    color: #2A5B45;
+}
+#cardWrapperNews{display: flex;
+    
+    width: 1200px;
+min-height: 391.39px;
+gap: 24px;
+}
+.product{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width:  282px;
+    min-height: 391.39px;   
+    border: 1px solid #E3DED7 ;
+    border-radius: 8px ;
+  
+}
+.botton-include{
+
+    min-width:  60px;
+min-height:  32px;
+color: white;
+background: #2A5B45B2;
+
+
+border-radius: 4px ;
+
+
+}
+
+#linkIcon-newCards{
+display: flex;
+text-decoration: underline;
+}
+/* 
+
+
+
+ */
+
+#frequently-asks-question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+color:#ffffff ;
+    min-height: 621px;
+    background: #2A5B45;
+
+
+}
+
+#FAQ-wrapper{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 668px;
+    min-height: 425px; 
+}
+
+
+
+
+#linkIcon-FAQ{
+    display: flex;
+    text-decoration: underline;
+
+    }
