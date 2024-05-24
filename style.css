@@ -1,11 +1,10 @@
 * {
   margin: 0%;
+  padding: 0%;
+  font-family: Outfit;
 }
 
-body {
-  font-family: Outfit;
-  margin: 0%;
-}
+
 
 nav {
   display: flex;
@@ -38,81 +37,71 @@ nav {
   font-size: 23.46px;
   font-weight: 400;
   line-height: 35.19px;
-  text-align: left;
+  
 }
 
-#export-coffeeHot {
+#exportCoffeeHot {
   width: 20.53px;
   height: 24.93px;
   top: -0.02px;
 }
 
-#menuWrapper {
-  gap: 16px;
+
+#listMenuWrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
   min-width: 512px;
   min-height: 32px;
-}
-#list-menuWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
 
   list-style: none;
 }
-/* #list-menuWrapper li{
 
-} */
 #frame9 {
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
   align-items: center;
   min-width: 288px;
   min-height: 40px;
   gap: 24px;
-  opacity: 0px;
+
 }
 
 #numberPhone {
   width: 102px;
   height: 16px;
 
-  font-size: 14px;
+  
   font-weight: 600;
   line-height: 16px;
 }
 
-#link-numberPhone {
+#linkNumberPhone {
   display: flex;
-  flex-direction: row;
+  
   min-width: 134px;
   min-height: 24px;
   gap: 8px;
   justify-content: space-between;
   align-items: center;
 }
-#img-link-numberPhone {
+#imgLinkNumberPhone {
   width: 18px;
   height: 18px;
-  top: 3px;
-  left: 3px;
 
-  border: 2px 0px 0px 0px;
 }
 
 #numberPhone {
   width: 102px;
   height: 16px;
 
-  font-family: Outfit;
+  
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -129,14 +118,14 @@ nav {
 
   background: #515051;
 }
-#tex-starSession {
+#texStarSession {
   width: 82px;
   height: 16px;
 
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-  text-align: left;
+  
 }
 /* 
 
@@ -153,7 +142,7 @@ nav {
   min-height: 486px;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-#hero-wrapper {
+#heroWrapper {
   display: flex;
   align-items: center;
   /*  */
@@ -162,18 +151,18 @@ nav {
   gap: 24px;
 }
 
-#pre-title {
+#preTitle {
   color: #2a5b45;
 }
 
-#botton-hero {
+#bottonHero {
   display: flex;
 
   gap: 16px;
   width: 321px;
 }
 
-#hero-firstBotton {
+#heroFirstBotton {
   display: flex;
   align-items: center;
   text-align: center;
@@ -184,7 +173,7 @@ nav {
   color: #ffffff;
   border-radius: 4px;
 }
-#hero-secondBotton {
+#heroSecondBotton {
   display: flex;
   align-items: center;
   text-align: center;
@@ -196,7 +185,7 @@ nav {
   color: #ffffff;
   border-radius: 4px;
 }
-#text-hero {
+#textHero {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -209,7 +198,7 @@ nav {
 
  */
 
-#cards-services {
+#cardsServices {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,7 +246,7 @@ nav {
 
   background-color: #ffffff;
 }
-.cardService p {
+.cardService>p {
   font-size: 14px;
   width: 268px;
 }
@@ -269,7 +258,7 @@ nav {
 
 
  */
-#cards-news {
+#cardsNews {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +288,7 @@ nav {
   border: 1px solid #e3ded7;
   border-radius: 8px;
 }
-.botton-include {
+.bottonInclude {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +301,7 @@ nav {
   border-radius: 4px;
 }
 
-#linkIcon-newCards {
+#linkIconNewCards {
   display: flex;
   text-decoration: underline;
 }
@@ -329,7 +318,7 @@ nav {
 
  */
 
-#frequently-asks-question {
+#frequentlyAsksQuestion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,7 +328,7 @@ nav {
   background: #2a5b45;
 }
 
-#FAQ-wrapper {
+#FAQWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -407,14 +396,14 @@ nav {
   width: 620px;
   height: 24px;
 }
-.img-FAQ {
+.imgFAQ {
   transition: all 0.5s;
 }
-.FAQ:hover .img-FAQ {
+.FAQ:hover .imgFAQ {
   transform: rotate(180deg);
 }
 
-#linkIcon-FAQ {
+#linkIconFAQ {
   color: #ffffff;
   display: flex;
   text-decoration: underline;
@@ -428,25 +417,23 @@ nav {
 
  */
 
-#feature-section {
+#featureSection {
   background: #f7f5f3;
 
-display: flex;
-justify-content: center;
- 
+  display: flex;
+  justify-content: center;
+
   height: 480px;
 }
 
-#feature-wrapper {
+#featureWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 44.61px;
 
-  
   width: 1200px;
   height: 390px;
-  
 }
 
 #textFeatureWrapper {
@@ -462,15 +449,10 @@ justify-content: center;
   color: #2a5b45;
 }
 
-#textFeatureWrapper p{
-   
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    
-    
-
-
+#textFeatureWrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 #imgFeatureWrapper {
   width: 588px;
@@ -479,7 +461,7 @@ justify-content: center;
   border-radius: 20px;
 }
 
-#linkIcon-featureSection {
+#linkIconFeatureSection {
   display: flex;
   font-size: 14px;
   text-decoration: underline;
@@ -492,3 +474,84 @@ justify-content: center;
 
 
  */
+#contactFormSection {
+  min-height: 552px;
+  background: #e3ded7;
+  display: flex;
+  justify-content: center;
+}
+#contentContactFormSection {
+  display: flex;
+  width: 1200px;
+  min-height: 552px;
+  gap: 24px;
+  opacity: 0.9px;
+  align-items: center;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 588px;
+  min-height: 320px;
+  gap: 32px;
+  opacity: 0px;
+
+  color: #6b7280;
+
+  font-weight: 400;
+  line-height: 16px;
+}
+#textContac {
+  min-height: 68px;
+  gap: 12px;
+}
+#textContac > h3 {
+  /* font-size: 18px; */
+  font-weight: 600;
+  line-height: 24px;
+  color: #111827;
+}
+
+#contentContact {
+  display: flex;
+  flex-direction: column;
+
+  height: 220px;
+  gap: 24px;
+}
+
+#directionContact {
+  width: 344px;
+  height: 27px;
+}
+
+#numberPhoneMail {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  gap: 12px;
+}
+
+.ourInfo {
+  display: flex;
+  min-height: 24px;
+  gap: 12px;
+}
+#TrailingContent {
+  width: 588px;
+  min-height: 552px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+
+}
+form{
+    display: flex;
+
+}
