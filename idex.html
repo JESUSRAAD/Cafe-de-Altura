@@ -25,15 +25,14 @@
         />
       </div>
 
-     
-        <ul id="listMenuWrapper">
-          <li>Tienda</li>
-          <li>Suscripción</li>
-          <li>Para empresas</li>
-          <li>Sobre nosotros</li>
-          <li>Contacto</li>
-        </ul>
-      
+      <ul id="listMenuWrapper">
+        <li>Tienda</li>
+        <li>Suscripción</li>
+        <li>Para empresas</li>
+        <li>Sobre nosotros</li>
+        <li>Contacto</li>
+      </ul>
+
       <div id="frame9">
         <div id="linkNumberPhone">
           <img
@@ -325,7 +324,50 @@
           </div>
         </div>
         <div id="TrailingContent">
-          <form></form>
+          <form>
+            <div id="inputLableName">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div id="inputLableMail">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="mail" />
+            </div>
+            <div id="inputLableNumberPhone">
+                
+              <label for="numPhone">Teléfono</label>
+            <div id="containerNumPhone">
+              <select name="codeZone" id="numPhone">
+                <option value="codeZone">US</option>
+                <option value="codeZone">VEN</option>
+                <option value="codeZone">COL</option>
+              </select>
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                id="numPhone"
+                name="numTlf"
+                placeholder="+1 (555) 987-6543"
+              />
+            </div>
+            </div>
+            <div id="inputLableTexrArea">
+              <label for="textArea"> </label>
+              <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <div id="inputLableCheckBox">
+              <input type="checkbox" id="conditions" name="conditions" />
+              <label for="conditions"
+                >Acepto la <span>Política de Privacidad</span> y los
+                <span> Términos y condiciones</span>.</label
+              >
+            </div>
+            <div id="bottonForm">
+              <a id="formBotton">
+                <p id="texFormBotton">Enviar</p>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>

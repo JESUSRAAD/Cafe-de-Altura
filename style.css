@@ -4,8 +4,6 @@
   font-family: Outfit;
 }
 
-
-
 nav {
   display: flex;
   color: #ffffff;
@@ -37,7 +35,6 @@ nav {
   font-size: 23.46px;
   font-weight: 400;
   line-height: 35.19px;
-  
 }
 
 #exportCoffeeHot {
@@ -45,7 +42,6 @@ nav {
   height: 24.93px;
   top: -0.02px;
 }
-
 
 #listMenuWrapper {
   display: flex;
@@ -70,21 +66,19 @@ nav {
   min-width: 288px;
   min-height: 40px;
   gap: 24px;
-
 }
 
 #numberPhone {
   width: 102px;
   height: 16px;
 
-  
   font-weight: 600;
   line-height: 16px;
 }
 
 #linkNumberPhone {
   display: flex;
-  
+
   min-width: 134px;
   min-height: 24px;
   gap: 8px;
@@ -94,14 +88,12 @@ nav {
 #imgLinkNumberPhone {
   width: 18px;
   height: 18px;
-
 }
 
 #numberPhone {
   width: 102px;
   height: 16px;
 
-  
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -125,7 +117,6 @@ nav {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-  
 }
 /* 
 
@@ -246,7 +237,7 @@ nav {
 
   background-color: #ffffff;
 }
-.cardService>p {
+.cardService > p {
   font-size: 14px;
   width: 268px;
 }
@@ -485,7 +476,7 @@ nav {
   width: 1200px;
   min-height: 552px;
   gap: 24px;
-  opacity: 0.9px;
+
   align-items: center;
 }
 #contact {
@@ -498,6 +489,7 @@ nav {
   opacity: 0px;
 
   color: #6b7280;
+  font-size: 14px;
 
   font-weight: 400;
   line-height: 16px;
@@ -507,7 +499,7 @@ nav {
   gap: 12px;
 }
 #textContac > h3 {
-  /* font-size: 18px; */
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   color: #111827;
@@ -545,13 +537,138 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
 
+  color: #374151;
   box-shadow: 0px 4px 4px 0px #00000040;
-
-
 }
-form{
-    display: flex;
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 470px;
+  min-height: 488px;
+  gap: 24px;
 
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+#TrailingContent input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  height: 34px;
+}
+#inputLableName {
+  display: flex;
+  flex-direction: column;
+  min-height: 54px;
+  gap: 4px;
+}
+#inputLableMail {
+  display: flex;
+  flex-direction: column;
+  min-height: 54px;
+  gap: 4px;
+}
+#inputLableNumberPhone {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 58px;
+}
+#containerNumPhone {
+  display: flex;
+  gap: 0%;
+}
+#containerNumPhone > select {
+  display: flex;
+  text-align: center;
+  width: 68px;
+  height: 38px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 6px 0px 0px 6px;
+}
+
+#containerNumPhone > input {
+  width: 402px;
+  height: 36px;
+
+  border-radius: 0px 6px 6px 0px;
+}
+
+#inputLableTexrArea {
+  display: flex;
+  flex-direction: column;
+  min-height: 142px;
+  gap: 4px;
+}
+textarea {
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  height: 142px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  text-align: justify;
+}
+
+#inputLableTexrArea > label {
+  opacity: 0%;
+}
+#inputLableCheckBox {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  gap: 12px;
+}
+#inputLableCheckBox > input {
+  border: 1px solid #d1d5db;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 4px;
+}
+
+#inputLableCheckBox span {
+  color: #374151;
+
+  font-weight: 600;
+  line-height: 16px;
+}
+#formBotton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a5b45;
+  color: #ffffff;
+  width: 90px;
+  min-height: 40px;
+
+  border-radius: 4px;
+}
+#inputLableName:hover input {
+  border: 2px solid #3f8f6b;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+#inputLableMail:hover input {
+  border: 2px solid #3f8f6b;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+#containerNumPhone:hover input {
+  border: 2px solid #3f8f6b;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+#containerNumPhone:hover  select{
+  border: 2px solid #3f8f6b;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+#inputLableName:hover input {
+  border: 2px solid #3f8f6b;
+  box-shadow: 0px 1px 2px 0px #0000000d;
 }
