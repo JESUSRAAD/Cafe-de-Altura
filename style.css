@@ -261,6 +261,8 @@ nav {
 #linkIconNewCards {
   display: flex;
   text-decoration: underline;
+  gap: 16px;
+  align-items: center;
 }
 
 #linkIconNewCards a {
@@ -363,6 +365,8 @@ nav {
   color: #ffffff;
   display: flex;
   text-decoration: underline;
+  align-items: center;
+  gap: 16px;
 }
 #featureSection {
   background: #f7f5f3;
@@ -406,8 +410,10 @@ nav {
 
 #linkIconFeatureSection {
   display: flex;
+  align-items: center;
   font-size: 14px;
   text-decoration: underline;
+  gap: 16px;
 }
 #linkIconFeatureSection a {
   font-weight: 600;
