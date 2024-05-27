@@ -56,6 +56,25 @@ nav {
   font-weight: 600;
   line-height: 16px;
   list-style: none;
+  padding: 8px;
+}
+#listMenuWrapper li {
+  display: flex;
+ align-items: center;
+  height: 32px;
+
+padding: 8px;
+  
+ 
+}
+#listMenuWrapper li:hover {
+  display: flex;
+ align-items: center;
+  height: 32px;
+  background: #F7F5F31A;
+padding: 8px;
+  
+  border-radius: 10px ;
 }
 
 #frame9 {
@@ -151,6 +170,8 @@ nav {
   background: #1f1815;
   color: #ffffff;
   border-radius: 4px;
+  font-weight: 600;
+  line-height: 16px;
 }
 #heroSecondBotton {
   display: flex;
@@ -162,6 +183,8 @@ nav {
   background: #2a5b45;
   color: #ffffff;
   border-radius: 4px;
+  font-weight: 600;
+  line-height: 16px;
 }
 #textHero {
   display: flex;
@@ -216,6 +239,11 @@ nav {
 .cardService > p {
   font-size: 14px;
   width: 268px;
+}
+.cardService > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
 }
 #cardsNews {
   display: flex;
@@ -273,10 +301,10 @@ nav {
 
 .product:hover {
   background: #f7f5f3;
-  cursor: pointer;
 }
-.product:hover a {
+.product >a:hover {
   background: #2a5b45;
+  cursor: pointer;
 }
 #frequentlyAsksQuestion {
   display: flex;
@@ -311,23 +339,27 @@ nav {
   height: 72px;
   background: #f7f5f3;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .FAQ h3 {
   display: flex;
   width: 620px;
   min-height: 24px;
   justify-content: space-between;
+  transition: 0.5s;
 }
 
 .FAQ hr {
   opacity: 0%;
   width: 0%;
+  transition: 0.5s;
 }
 .FAQ p {
   display: none;
   opacity: 0%;
   font-size: 12px;
   height: 0%;
+  transition: 1s;
 }
 
 #FAQ1:hover {
@@ -613,24 +645,45 @@ textarea {
   border-radius: 4px;
 }
 #inputLableName:hover input {
+  border: 1px solid #9b9ea3;
+}
+#inputLableName:focus input {
   border: 2px solid #3f8f6b;
 }
 #inputLableMail:hover input {
+  border: 1px solid #9b9ea3;
+}
+#inputLableMail:focus input {
   border: 2px solid #3f8f6b;
 }
 #containerNumPhone:hover input {
+  border: 1px solid #9b9ea3;
+  height: 36px;
+  border-left: 0px;
+}
+#containerNumPhone:focus input {
   border: 2px solid #3f8f6b;
-  height: 35px;
+  height: 36px;
   border-left: 0px;
 }
 #containerNumPhone:hover select {
+  border: 1px solid #9b9ea3;
+  border-right: 0px;
+}
+#containerNumPhone:focus select {
   border: 2px solid #3f8f6b;
   border-right: 0px;
 }
 #inputLableName:hover input {
+  border: 1px solid #9b9ea3;
+}
+#inputLableName:focus input {
   border: 2px solid #3f8f6b;
 }
 #inputLableTexrArea:hover textarea {
+  border: 1px solid #9b9ea3;
+}
+#inputLableTexrArea:focus textarea {
   border: 2px solid #3f8f6b;
 }
 footer {
