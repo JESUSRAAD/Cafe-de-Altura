@@ -60,7 +60,6 @@ nav {
 
 #frame9 {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   min-width: 288px;
@@ -113,7 +112,6 @@ nav {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-
   color: white;
 }
 #hero {
@@ -139,7 +137,6 @@ nav {
 
 #bottonHero {
   display: flex;
-
   gap: 16px;
   width: 321px;
 }
@@ -214,7 +211,6 @@ nav {
   border-radius: 8px;
   box-shadow: 0px 1px 4px 0px #e3ded7cc;
   border: 1px solid #f7f5f3;
-
   background-color: #ffffff;
 }
 .cardService > p {
@@ -318,13 +314,11 @@ nav {
   display: flex;
   width: 620px;
   min-height: 24px;
-
   justify-content: space-between;
 }
 
 .FAQ hr {
   opacity: 0%;
-
   width: 0%;
 }
 .FAQ p {
@@ -350,7 +344,6 @@ nav {
 
 .FAQ:hover hr {
   opacity: 100%;
-
   width: 620px;
 }
 .FAQ:hover p {
@@ -369,15 +362,12 @@ nav {
 #linkIconFAQ {
   color: #ffffff;
   display: flex;
-
   text-decoration: underline;
 }
 #featureSection {
   background: #f7f5f3;
-
   display: flex;
   justify-content: center;
-
   height: 480px;
 }
 
@@ -386,7 +376,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 44.61px;
-
   width: 1200px;
   height: 390px;
 }
@@ -412,7 +401,6 @@ nav {
 #imgFeatureWrapper {
   width: 588px;
   height: 390px;
-
   border-radius: 20px;
 }
 
@@ -424,7 +412,6 @@ nav {
 #linkIconFeatureSection a {
   font-weight: 600;
   line-height: 16px;
-
   color: #000000;
 }
 #contactFormSection {
@@ -438,7 +425,6 @@ nav {
   width: 1200px;
   min-height: 552px;
   gap: 24px;
-
   align-items: center;
 }
 #contact {
@@ -449,10 +435,8 @@ nav {
   min-height: 320px;
   gap: 32px;
   opacity: 0px;
-
   color: #6b7280;
   font-size: 14px;
-
   font-weight: 400;
   line-height: 16px;
 }
@@ -470,7 +454,6 @@ nav {
 #contentContact {
   display: flex;
   flex-direction: column;
-
   height: 220px;
   gap: 24px;
 }
@@ -500,7 +483,6 @@ nav {
   justify-content: center;
   align-items: center;
   background: #ffffff;
-
   color: #374151;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
@@ -510,7 +492,6 @@ form {
   min-width: 470px;
   min-height: 488px;
   gap: 24px;
-
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -596,10 +577,8 @@ textarea {
 }
 #inputLableCheckBox > input {
   border: 1px solid #d1d5db;
-
   width: 16px;
   height: 16px;
-
   border-radius: 4px;
 }
 
@@ -617,7 +596,6 @@ textarea {
   color: #ffffff;
   width: 90px;
   min-height: 40px;
-
   border-radius: 4px;
 }
 #inputLableName:hover input {
@@ -633,7 +611,6 @@ textarea {
 }
 #containerNumPhone:hover select {
   border: 2px solid #3f8f6b;
-
   border-right: 0px;
 }
 #inputLableName:hover input {
@@ -647,7 +624,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 310px;
-
   align-items: center;
   background: #1f1815;
   color: white;
@@ -667,7 +643,6 @@ footer {
   align-items: center;
   height: 40px;
   width: 100%;
-
   background: #2b2a2b;
   line-height: 16px;
 }
@@ -677,7 +652,6 @@ footer {
 #logoFooter {
   display: flex;
   align-items: center;
-
   font-size: 23.46px;
   width: 288px;
   height: 36px;
@@ -686,7 +660,6 @@ footer {
 
 #linksContacts {
   display: flex;
-
   width: 1132px;
   height: 152px;
   gap: 183px;
@@ -737,9 +710,7 @@ footer {
   align-items: center;
   width: 232px;
   min-height: 48px;
-
   background: #515051;
-
   border-radius: 4px;
 }
 .contactBotton {
