@@ -3,6 +3,10 @@
   padding: 0%;
   font-family: Outfit;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 nav {
   display: flex;
@@ -29,9 +33,7 @@ nav {
 #titleDirection {
   width: 186px;
   height: 36px;
-
   opacity: 0.86px;
-
   font-size: 23.46px;
   font-weight: 400;
   line-height: 35.19px;
@@ -47,14 +49,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 16px;
   min-width: 512px;
   min-height: 32px;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-
   list-style: none;
 }
 
@@ -71,14 +71,12 @@ nav {
 #numberPhone {
   width: 102px;
   height: 16px;
-
   font-weight: 600;
   line-height: 16px;
 }
 
 #linkNumberPhone {
   display: flex;
-
   min-width: 134px;
   min-height: 24px;
   gap: 8px;
@@ -93,7 +91,6 @@ nav {
 #numberPhone {
   width: 102px;
   height: 16px;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -107,23 +104,18 @@ nav {
   border-radius: 4px;
   text-align: center;
   align-items: center;
-
   background: #515051;
+  text-decoration: none;
 }
 #texStarSession {
   width: 82px;
   height: 16px;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
+
+  color: white;
 }
-/* 
-
-
-
-
- */
 #hero {
   display: flex;
   justify-content: center;
@@ -136,7 +128,6 @@ nav {
 #heroWrapper {
   display: flex;
   align-items: center;
-  /*  */
   max-width: 1200px;
   min-height: 390px;
   gap: 24px;
@@ -172,7 +163,6 @@ nav {
   min-height: 40px;
   justify-content: center;
   background: #2a5b45;
-
   color: #ffffff;
   border-radius: 4px;
 }
@@ -181,14 +171,6 @@ nav {
   flex-direction: column;
   gap: 16px;
 }
-
-/* 
-
-
-
-
- */
-
 #cardsServices {
   display: flex;
   flex-direction: column;
@@ -197,7 +179,6 @@ nav {
   gap: 24px;
   min-height: 380px;
   text-align: center;
-
   background-image: url(assets/img/086aa1e226e5adfe010fd0fb3ff3e2cb.jpeg);
   background-position: center;
   background-size: cover;
@@ -212,7 +193,6 @@ nav {
   max-width: 996px;
   min-height: 232px;
   gap: 24px;
-  /*  */
 }
 .greenBoxCard {
   display: flex;
@@ -241,14 +221,6 @@ nav {
   font-size: 14px;
   width: 268px;
 }
-
-/* 
-
-
-
-
-
- */
 #cardsNews {
   display: flex;
   flex-direction: column;
@@ -283,12 +255,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-width: 60px;
   min-height: 32px;
   color: white;
   background: #2a5b45b2;
-
   border-radius: 4px;
 }
 
@@ -296,19 +266,20 @@ nav {
   display: flex;
   text-decoration: underline;
 }
+
+#linkIconNewCards a {
+  color: #000000;
+  font-weight: 600;
+  line-height: 16px;
+}
+
 .product:hover {
   background: #f7f5f3;
+  cursor: pointer;
 }
 .product:hover a {
   background: #2a5b45;
 }
-
-/* 
-
-
-
- */
-
 #frequentlyAsksQuestion {
   display: flex;
   flex-direction: column;
@@ -401,15 +372,6 @@ nav {
 
   text-decoration: underline;
 }
-/* 
-
-
-
-
-
-
- */
-
 #featureSection {
   background: #f7f5f3;
 
@@ -459,14 +421,12 @@ nav {
   font-size: 14px;
   text-decoration: underline;
 }
-/* 
+#linkIconFeatureSection a {
+  font-weight: 600;
+  line-height: 16px;
 
-
-
-
-
-
- */
+  color: #000000;
+}
 #contactFormSection {
   min-height: 552px;
   background: #e3ded7;
@@ -682,17 +642,12 @@ textarea {
 #inputLableTexrArea:hover textarea {
   border: 2px solid #3f8f6b;
 }
-/* 
-
-
-
-
- */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 310px;
+
   align-items: center;
   background: #1f1815;
   color: white;
@@ -711,12 +666,12 @@ footer {
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 100vw;
+  width: 100%;
+
   background: #2b2a2b;
   line-height: 16px;
 }
 #copyraightFooter p {
-  
   margin-left: 150px;
 }
 #logoFooter {
@@ -761,6 +716,7 @@ footer {
   list-style: none;
   gap: 16px;
 }
+
 #contactWrapper h3 {
   font-size: 18px;
   font-weight: 600;
