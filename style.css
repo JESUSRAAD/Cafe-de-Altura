@@ -575,6 +575,14 @@ textarea {
   min-height: 20px;
   gap: 12px;
 }
+#inputLableCheckBox a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: underline;
+  color: #374151;
+}
+
 #inputLableCheckBox > input {
   border: 1px solid #d1d5db;
   width: 16px;
