@@ -60,21 +60,19 @@ nav {
 }
 #listMenuWrapper li {
   display: flex;
- align-items: center;
+  align-items: center;
   height: 32px;
 
-padding: 8px;
-  
- 
+  padding: 8px;
 }
 #listMenuWrapper li:hover {
   display: flex;
- align-items: center;
+  align-items: center;
   height: 32px;
-  background: #F7F5F31A;
-padding: 8px;
-  
-  border-radius: 10px ;
+  background: #f7f5f31a;
+  padding: 8px;
+
+  border-radius: 10px;
 }
 
 #frame9 {
@@ -302,7 +300,7 @@ padding: 8px;
 .product:hover {
   background: #f7f5f3;
 }
-.product >a:hover {
+.product > a:hover {
   background: #2a5b45;
   cursor: pointer;
 }
@@ -312,7 +310,7 @@ padding: 8px;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  min-height: 621px;
+  min-height: 444px;
   background: #2a5b45;
   gap: 24px;
 }
@@ -325,7 +323,7 @@ padding: 8px;
   gap: 16px;
   color: black;
   width: 668px;
-  min-height: 425px;
+  min-height: 216px;
 }
 .titleChevron {
   display: flex;
@@ -337,56 +335,40 @@ padding: 8px;
   align-items: center;
   width: 668px;
   height: 72px;
+
   background: #f7f5f3;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 1s;
 }
 .FAQ h3 {
-  display: flex;
   width: 620px;
   min-height: 24px;
-  justify-content: space-between;
-  transition: 0.5s;
-}
-
-.FAQ hr {
-  opacity: 0%;
-  width: 0%;
-  transition: 0.5s;
-}
-.FAQ p {
-  display: none;
-  opacity: 0%;
-  font-size: 12px;
-  height: 0%;
   transition: 1s;
 }
 
-#FAQ1:hover {
+.FAQ:hover {
+  align-items: center;
   height: 136px;
   gap: 16px;
 }
-#FAQ2:hover {
-  height: 168px;
+
+.efectTransition {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 12px;
+  height: 0px;
   gap: 16px;
-  padding-bottom: 24px;
+  transition: 1s;
 }
-#FAQ3:hover {
-  height: 168px;
-  gap: 16px;
+.FAQ:hover .efectTransition {
+  opacity: 100%;
+  width: 620px;
+  height: max-content;
 }
 
-.FAQ:hover hr {
-  opacity: 100%;
-  width: 620px;
-}
-.FAQ:hover p {
-  display: flex;
-  opacity: 100%;
-  width: 620px;
-  height: 24px;
-}
 .imgFAQ {
+  
   transition: all 0.5s;
 }
 .FAQ:hover .imgFAQ {
@@ -397,9 +379,19 @@ padding: 8px;
   color: #ffffff;
   display: flex;
   text-decoration: underline;
-  align-items: center;
+ height: 72px;
   gap: 16px;
 }
+#frequentlyAsksQuestion h2{
+  display: flex;
+  align-items: end;
+  height: 93px;
+  padding: 17px;
+}
+#linkIconFAQ img{
+height: 25px;
+}
+
 #featureSection {
   background: #f7f5f3;
   display: flex;
@@ -542,6 +534,7 @@ form {
 
   height: 34px;
 }
+
 #inputLableName {
   display: flex;
   flex-direction: column;
@@ -557,29 +550,32 @@ form {
 #inputLableNumberPhone {
   display: flex;
   flex-direction: column;
-
+  gap: 4px;
   min-height: 58px;
 }
+/*                                                                */
 #containerNumPhone {
   display: flex;
   gap: 0%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px #0000000d;
 }
 #containerNumPhone > select {
-  display: flex;
   text-align: center;
   width: 68px;
   height: 38px;
-  border: 1px solid #d1d5db;
+  border: 0px;
+  border-radius: 6px;
   border-right: 0px;
-  box-shadow: 0px 1px 2px 0px #0000000d;
-  border-radius: 6px 0px 0px 6px;
 }
 
 #containerNumPhone > input {
   width: 402px;
-  height: 36.4px;
+  height: 38px;
+  border: 0px;
   border-left: 0px;
-  border-radius: 0px 6px 6px 0px;
+  outline: none;
 }
 
 #inputLableTexrArea {
@@ -588,17 +584,15 @@ form {
   min-height: 142px;
   gap: 4px;
 }
-::placeholder {
-  padding-top: 13px;
-  padding-left: 17px;
-}
+
 textarea {
   display: flex;
   justify-content: center;
-
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-right: 17px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-
   height: 142px;
   box-shadow: 0px 1px 2px 0px #0000000d;
   text-align: justify;
@@ -612,6 +606,9 @@ textarea {
   align-items: center;
   min-height: 20px;
   gap: 12px;
+}
+#inputLableCheckBox input {
+  accent-color: #2a5b45;
 }
 #inputLableCheckBox a {
   font-size: 14px;
@@ -643,47 +640,46 @@ textarea {
   width: 90px;
   min-height: 40px;
   border-radius: 4px;
+  cursor: pointer;
+}
+.inputsMargin {
+  padding-left: 17px;
 }
 #inputLableName:hover input {
   border: 1px solid #9b9ea3;
 }
-#inputLableName:focus input {
+#inputLableName input:focus {
+  outline: none;
   border: 2px solid #3f8f6b;
 }
 #inputLableMail:hover input {
   border: 1px solid #9b9ea3;
 }
-#inputLableMail:focus input {
+#inputLableMail input:focus {
+  outline: none;
   border: 2px solid #3f8f6b;
 }
-#containerNumPhone:hover input {
+
+#containerNumPhone:hover {
   border: 1px solid #9b9ea3;
-  height: 36px;
-  border-left: 0px;
 }
-#containerNumPhone:focus input {
+#containerNumPhone:focus-within {
+  outline: none;
   border: 2px solid #3f8f6b;
-  height: 36px;
-  border-left: 0px;
 }
-#containerNumPhone:hover select {
-  border: 1px solid #9b9ea3;
-  border-right: 0px;
-}
-#containerNumPhone:focus select {
-  border: 2px solid #3f8f6b;
-  border-right: 0px;
-}
+
 #inputLableName:hover input {
   border: 1px solid #9b9ea3;
 }
-#inputLableName:focus input {
+#inputLableName input:focus {
+  outline: none;
   border: 2px solid #3f8f6b;
 }
 #inputLableTexrArea:hover textarea {
   border: 1px solid #9b9ea3;
 }
-#inputLableTexrArea:focus textarea {
+#inputLableTexrArea textarea:focus {
+  outline: none;
   border: 2px solid #3f8f6b;
 }
 footer {
@@ -713,9 +709,7 @@ footer {
   background: #2b2a2b;
   line-height: 16px;
 }
-#copyraightFooter p {
-  margin-left: 150px;
-}
+
 #logoFooter {
   display: flex;
   align-items: center;
