@@ -386,7 +386,7 @@ nav {
   display: flex;
   align-items: end;
   height: 93px;
-  padding: 17px;
+  padding-bottom: 17px;
 }
 #linkIconFAQ img{
 height: 25px;
