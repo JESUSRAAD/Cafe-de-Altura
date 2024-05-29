@@ -159,7 +159,7 @@ nav {
   font-weight: 600;
   line-height: 44px;
 }
-#textHero >p {
+#textHero > p {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -278,7 +278,6 @@ nav {
 }
 #cardWrapperNews {
   display: flex;
-
   width: 1200px;
   min-height: 391.39px;
   gap: 24px;
@@ -361,9 +360,7 @@ nav {
   width: 668px;
   min-height: 216px;
 }
-.titleChevron {
-  display: flex;
-}
+
 .FAQ {
   transition: 1s;
   display: flex;
@@ -376,15 +373,19 @@ nav {
   background: #f7f5f3;
   border-radius: 10px;
 }
-.FAQ .titleChevron {
+ .titleChevron {
   width: 620px;
-  max-height: 72px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .FAQ:hover {
+  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 136px;
   gap: 16px;
@@ -392,17 +393,14 @@ nav {
 
 .efectTransition {
   transition: 1s;
-  display: flex;
-  flex-direction: column;
+width: 620px; ;
   overflow: hidden;
   font-size: 12px;
   height: 0px;
-  gap: 16px;
 }
 .FAQ:hover .efectTransition {
-  opacity: 100%;
   width: 620px;
-  height: max-content;
+  height: 200px;
 }
 
 .imgFAQ {
