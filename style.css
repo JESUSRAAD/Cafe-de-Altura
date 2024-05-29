@@ -383,6 +383,7 @@ nav {
 
 .FAQ:hover {
   padding-top: 23px;
+  padding-bottom: 23px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,10 +393,13 @@ nav {
 }
 
 .efectTransition {
+  display: flex;
+  flex-direction: column;
   transition: 1s;
 width: 620px; ;
   overflow: hidden;
   font-size: 12px;
+  gap: 16px;
   height: 0px;
 }
 .FAQ:hover .efectTransition {
