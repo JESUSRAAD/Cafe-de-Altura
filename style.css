@@ -499,7 +499,7 @@ width: 620px; ;
   gap: 24px;
   align-items: center;
 }
-#contentContact span {
+#contentContact a {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -645,9 +645,6 @@ textarea {
   text-align: justify;
 }
 
-#inputLableTexrArea > label {
-  opacity: 0%;
-}
 #inputLableCheckBox {
   display: flex;
   align-items: center;
@@ -657,6 +654,13 @@ textarea {
 #inputLableCheckBox input {
   accent-color: #2a5b45;
 }
+
+#inputLableCheckBox > input {
+  border: 1px solid #d1d5db;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
 #inputLableCheckBox a {
   font-size: 14px;
   font-weight: 600;
@@ -665,19 +669,6 @@ textarea {
   color: #374151;
 }
 
-#inputLableCheckBox > input {
-  border: 1px solid #d1d5db;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-}
-
-#inputLableCheckBox span {
-  color: #374151;
-
-  font-weight: 600;
-  line-height: 16px;
-}
 #formBotton {
   display: flex;
   justify-content: center;
