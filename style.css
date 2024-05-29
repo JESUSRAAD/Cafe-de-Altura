@@ -192,7 +192,8 @@ nav {
   min-width: 137px;
   min-height: 40px;
   justify-content: center;
-  background: #2a5b45;
+  background: #2A5B45;
+  ;
   color: #ffffff;
   border-radius: 4px;
   font-weight: 600;
@@ -239,7 +240,7 @@ nav {
   align-items: center;
   justify-content: center;
   width: 64px;
-  min-height: 64px;
+  height: 64px;
   border-radius: 20px;
   background: #2a5b45;
 }
@@ -768,6 +769,7 @@ footer {
 
 #linksContacts {
   display: flex;
+  justify-content: space-between;
   width: 1132px;
   height: 152px;
   gap: 183px;
@@ -786,7 +788,8 @@ footer {
   min-width: 96px;
   min-height: 144px;
   gap: 16px;
-  margin-left: 137px;
+  position: absolute;
+  left: 49%;
 }
 
 #menuContactWrapper2 {
