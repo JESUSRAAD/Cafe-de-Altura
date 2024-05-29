@@ -175,12 +175,17 @@ nav {
   display: flex;
   align-items: center;
   text-align: center;
-  min-width: 168px;
+  min-width: 137px;
   min-height: 40px;
   justify-content: center;
   background: #2a5b45;
   color: #ffffff;
   border-radius: 4px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.texHeroBotton {
+  font-size: 14px;
   font-weight: 600;
   line-height: 16px;
 }
@@ -202,6 +207,9 @@ nav {
   background-size: cover;
 }
 #titleServices {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
   color: #ffffff;
 }
 #cardServicesWrapper {
@@ -273,6 +281,17 @@ nav {
   border: 1px solid #e3ded7;
   border-radius: 8px;
 }
+.texCardProducts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.texCardProducts p {
+  font-weight: 400;
+}
 .bottonInclude {
   display: flex;
   justify-content: center;
@@ -282,6 +301,9 @@ nav {
   color: white;
   background: #2a5b45b2;
   border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 #linkIconNewCards {
@@ -329,21 +351,25 @@ nav {
   display: flex;
 }
 .FAQ {
+  transition: 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 668px;
   height: 72px;
-
+gap: 0px;
   background: #f7f5f3;
   border-radius: 10px;
-  transition: 1s;
 }
-.FAQ h3 {
+.FAQ .titleChevron {
+  /* transition: 1s; */
   width: 620px;
-  min-height: 24px;
-  transition: 1s;
+  max-height: 72px;
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+
 }
 
 .FAQ:hover {
@@ -353,13 +379,13 @@ nav {
 }
 
 .efectTransition {
+  transition: 1s;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   font-size: 12px;
   height: 0px;
   gap: 16px;
-  transition: 1s;
 }
 .FAQ:hover .efectTransition {
   opacity: 100%;
@@ -368,8 +394,11 @@ nav {
 }
 
 .imgFAQ {
-  
   transition: all 0.5s;
+  width: 20px;
+height: 20px;
+
+
 }
 .FAQ:hover .imgFAQ {
   transform: rotate(180deg);
@@ -379,17 +408,17 @@ nav {
   color: #ffffff;
   display: flex;
   text-decoration: underline;
- height: 72px;
+  height: 72px;
   gap: 16px;
 }
-#frequentlyAsksQuestion h2{
+#frequentlyAsksQuestion h2 {
   display: flex;
   align-items: end;
   height: 93px;
   padding-bottom: 17px;
 }
-#linkIconFAQ img{
-height: 25px;
+#linkIconFAQ img {
+  height: 25px;
 }
 
 #featureSection {
@@ -457,6 +486,13 @@ height: 25px;
   gap: 24px;
   align-items: center;
 }
+#contentContact span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #111827;
+  text-decoration: underline;
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -520,7 +556,7 @@ form {
   display: flex;
   flex-direction: column;
   min-width: 470px;
-  min-height: 488px;
+  height: 488px;
   gap: 24px;
   font-size: 12px;
   font-weight: 400;
@@ -531,7 +567,6 @@ form {
   border: 1px solid #d1d5db;
   border-radius: 6px;
   box-shadow: 0px 1px 2px 0px #0000000d;
-
   height: 34px;
 }
 
@@ -552,8 +587,7 @@ form {
   flex-direction: column;
   gap: 4px;
   min-height: 58px;
-}
-/*                                                                */
+}                                                            
 #containerNumPhone {
   display: flex;
   gap: 0%;
@@ -643,6 +677,7 @@ textarea {
   cursor: pointer;
 }
 .inputsMargin {
+  box-sizing: border-box;
   padding-left: 17px;
 }
 #inputLableName:hover input {
