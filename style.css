@@ -382,13 +382,13 @@ nav {
 }
 
 .FAQ:hover {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 136px;
+  height: 125px;
   gap: 16px;
 }
 
@@ -408,7 +408,7 @@ width: 620px; ;
 }
 
 .imgFAQ {
-  transition: all 0.5s;
+  transition: all 1s;
   width: 20px;
   height: 20px;
 }
