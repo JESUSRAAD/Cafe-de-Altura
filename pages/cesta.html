@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/cesta.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <p id="titleDirection">cafedealtura.com</p>
+        <img
+          id="exportCoffeeHot"
+          src="/assets/img/ps_coffee-hot.png"
+          alt="coffeeHot"
+        />
+      </div>
+      <ul id="listMenuWrapper">
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="">Suscripción</a></li>
+        <li><a href="">Para empresas</a></li>
+        <li><a href="">Sobre nosotros</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+      <div id="frame9">
+        <div id="linkNumberPhone">
+          <img
+            id="imgLinkNumberPhone"
+            src="/assets/img/Icon.png"
+            alt="iconPhone"
+          />
+          <p id="numberPhone">+34 919 49 05 18</p>
+        </div>
+
+        <a href="" id="starSession">
+          <p id="texStarSession">Iniciar sesión</p>
+        </a>
+      </div>
+      <div id="carr">
+        <img src="/assets/img/Carr.png" alt="icon-shopBag" id="imgCarr" />
+      </div>
+    </nav>
+    <section id="basket">
+      <h2 id="titleCesta">Cesta (2)</h2>
+      <div id="purchase">
+        <div id="productTable">
+          <h3 class="title">Procuctos</h3>
+          <div id="ordercoutainer"></div>
+          <h3 class="title" for="payMethod">Seleccionar envío</h3>
+          <div id="firstOption">
+            <input id="7day" name="send" class="pointGreen" type="radio" />
+            <label for="7day"></label>
+          </div>
+
+          <hr class="divisor" />
+
+          <div id="secondOption">
+             <input id="24h" name="send" class="pointGreen" type="radio" />
+          <label for="24h"></label>
+          </div>
+         
+        </div>
+        <div id="totalPay"></div>
+      </div>
+    </section>
+    <div id="copyraightFooter">
+      <p>Todos los derechos reservados - Café de Altura SL - 2024</p>
+    </div>
+    <script type="module" src="/cesta.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body{display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* //////////////////////7 CESTA//////////////////// */
+#basket {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 772px;
+  padding: 40px;
+  gap: 24px;
+}
+#titleCesta {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2a5b45;
+}
+#purchase {
+  display: flex;
+  width: 1200px;
+  min-height: 415.32px;
+  gap: 24px;
+}
+#productTable {
+  display: flex;
+  flex-direction: column;
+  width: 784px;
+  min-height: 407.32px;
+  padding: 8px;
+  gap: 24px;
+}
+/* /////////////////////footer////////////// */
+#copyraightFooter{
+color: white;
+
+}

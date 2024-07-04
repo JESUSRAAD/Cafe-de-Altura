@@ -1,0 +1,24 @@
+/* /////////////////GALLERY CARD PRUDUCTS///////////// */
+#cardGallery {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 898.79px;
+  padding: 40px;
+  gap: 24px;
+}
+#titleGallery {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2A5B45;
+
+}
+#cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}

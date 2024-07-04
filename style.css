@@ -7,7 +7,7 @@ a {
   text-decoration: none;
   color: white;
 }
-
+/* /////////////////////Nav///////////////////////////7777 */
 nav {
   display: flex;
   color: #ffffff;
@@ -131,6 +131,137 @@ nav {
   line-height: 16px;
   color: white;
 }
+
+/* ////////////////////CARR CARRITO/////////////////////////// */
+#minicar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 314px;
+  max-height: 391.37px;
+  min-height: 270px;
+  top: 64px;
+  background-color: white;
+  border-radius: 8px;
+  border: #000000 solid 1px;
+  right: 20px;
+  visibility: hidden;
+  padding: 8px;
+  gap: 20px;
+}
+#divtitleSectition {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #2a5b45;
+}
+#divContainerCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+}
+#divContainerCoffes {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+
+  overflow-x: hidden;
+  max-height: 200px;
+  gap: 7px;
+}
+
+#divClear{
+
+color: #000000b4;
+
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.miniCard {
+  display: flex;
+  width: 280px;
+  border: 1px solid #e3ded7;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  gap: 6px;
+  padding: 7px;
+  margin-top: 10px;
+}
+.imgMiniCard {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+.infoMiniCard {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.priceCard {
+  font-weight: 400;
+}
+.buttoMiniCardStyle {
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: red;
+  color: black;
+}
+.accAndBtnX {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 12px;
+ justify-content: center;
+ 
+}
+.acc {
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 200px;
+  background-color: #2A5B451A;
+  color: #2A5B45;
+}
+#divContainerButtonCheckOut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#aCheckoutCar{
+  background-color: #2a5b45;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+#aClearCar{
+
+  background-color:#E3DED7;
+  border-radius: 8px;
+  padding: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+/* //////////////////////hero///////////////////77 */
+
 #hero {
   display: flex;
   justify-content: center;
@@ -192,8 +323,7 @@ nav {
   min-width: 137px;
   min-height: 40px;
   justify-content: center;
-  background: #2A5B45;
-  ;
+  background: #2a5b45;
   color: #ffffff;
   border-radius: 4px;
   font-weight: 600;
@@ -209,6 +339,9 @@ nav {
   flex-direction: column;
   gap: 16px;
 }
+
+/* //////////////////////services////////////////////////7777 */
+
 #cardsServices {
   display: flex;
   flex-direction: column;
@@ -266,6 +399,9 @@ nav {
   font-weight: 600;
   line-height: 24px;
 }
+
+/* ///////////////////novedades////////////// */
+
 #cardsNews {
   display: flex;
   flex-direction: column;
@@ -279,7 +415,8 @@ nav {
 }
 #cardWrapperNews {
   display: flex;
-  width: 1200px;
+  flex-wrap: wrap;
+  /* width: 1200px; */
   min-height: 391.39px;
   gap: 24px;
 }
@@ -340,6 +477,8 @@ nav {
   background: #2a5b45;
   cursor: pointer;
 }
+/* ///////////////////preguntas frecuentes ////////////////// */
+
 #frequentlyAsksQuestion {
   display: flex;
   flex-direction: column;
@@ -374,7 +513,7 @@ nav {
   background: #f7f5f3;
   border-radius: 10px;
 }
- .titleChevron {
+.titleChevron {
   width: 620px;
   height: 72px;
   display: flex;
@@ -397,7 +536,7 @@ nav {
   display: flex;
   flex-direction: column;
   transition: 1s;
-width: 620px; ;
+  width: 620px;
   overflow: hidden;
   font-size: 12px;
   gap: 16px;
@@ -433,6 +572,8 @@ width: 620px; ;
 #linkIconFAQ img {
   height: 25px;
 }
+
+/* ////////////////nuestro cofes/////////////////77 */
 
 #featureSection {
   background: #f7f5f3;
@@ -486,6 +627,9 @@ width: 620px; ;
   line-height: 16px;
   color: #000000;
 }
+
+/* ////////////////form//////////////// */
+
 #contactFormSection {
   min-height: 552px;
   background: #e3ded7;
@@ -721,6 +865,9 @@ textarea {
   outline: none;
   border: 2px solid #3f8f6b;
 }
+
+/* ///////////////////footer//////////////7 */
+
 footer {
   display: flex;
   flex-direction: column;
