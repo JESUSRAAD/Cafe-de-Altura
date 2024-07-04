@@ -56,20 +56,69 @@
           <h3 class="title">Procuctos</h3>
           <div id="ordercoutainer"></div>
           <h3 class="title" for="payMethod">Seleccionar envío</h3>
-          <div id="firstOption">
-            <input id="7day" name="send" class="pointGreen" type="radio" />
-            <label for="7day"></label>
+          <div class="deliveryOption">
+            <input
+              class="deliveryradiusOption"
+              name="send"
+              class="pointGreen"
+              type="radio"
+            />
+            <label class="labelInpu" for="7day"
+              ><p class="label1">Envío 5-7 días</p>
+              <p class="label2">Opción estándar sin seguimiento</p></label
+            >
+            <div class="price">GRATIS</div>
           </div>
 
           <hr class="divisor" />
 
-          <div id="secondOption">
-             <input id="24h" name="send" class="pointGreen" type="radio" />
-          <label for="24h"></label>
+          <div class="deliveryOption">
+            <input
+              class="deliveryradiusOption"
+              name="send"
+              class="pointGreen"
+              type="radio"
+            />
+            <label class="labelInpu" for="24h"
+              ><p class="label1">Envío urgente 24h</p>
+              <p class="label2">
+                Recibe tu pedido en las siguientes 24h (Para pedidos realizados
+                antes de las 13:00).
+              </p></label
+            >
+            <div class="price">9,00 €</div>
           </div>
-         
         </div>
-        <div id="totalPay"></div>
+        <div id="totalPayBox">
+          <div id="totalPaySection">
+            <div id="titlepay">Total del carrito</div>
+            <hr class="divisor" />
+
+            <div class="infoPay">
+              <div class="subTitle">SUBTOTAL</div>
+              <div></div>
+            </div>
+
+            <div class="infoPay">
+              <div class="subTitle">ENVÍO</div>
+              <div></div>
+            </div>
+
+            <hr class="divisor" />
+
+            <div class="infoPay">
+              <div id="totalTitle">TOTAL</div>
+              <div id="totalIVA">
+                <p id="totalPay"></p>
+                <p id="IVA">Incluye 3,78€ de IVA</p>
+              </div>
+            </div>
+          </div>
+          <div id="ButtonsPay">
+            <a href="" id="buttonkCheck">Ir a checkout</a>
+            <a href="" id="buttonShop">Seguir comprando</a>
+          </div>
+        </div>
       </div>
     </section>
     <div id="copyraightFooter">

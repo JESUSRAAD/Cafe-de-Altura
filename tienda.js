@@ -1,8 +1,50 @@
 import { coffes } from "./data.js";
 import { pushOrAcc } from "./data.js";
 
+////////////////////////CARRITO///////////////////////
+const minicar = document.createElement("div");
+minicar.id = "minicar";
+const nav = document.querySelector("nav");
+nav.appendChild(minicar);
 
-const coffeArrCar = JSON.parse(localStorage.getItem("coffeArrCar"));
+const divtitleSectition = document.createElement("div");
+divtitleSectition.id = "divtitleSectition";
+minicar.appendChild(divtitleSectition);
+const titleCar = document.createElement("h3");
+titleCar.innerHTML = "Carrito";
+divtitleSectition.appendChild(titleCar);
+
+const divContainerCar = document.createElement("div");
+divContainerCar.id = "divContainerCar";
+minicar.appendChild(divContainerCar);
+const divContainerCoffes = document.createElement("div");
+divContainerCoffes.id = "divContainerCoffes";
+divContainerCar.appendChild(divContainerCoffes);
+
+const divContainerButtonCheckOut = document.createElement("div");
+divContainerButtonCheckOut.id = "divContainerButtonCheckOut";
+minicar.appendChild(divContainerButtonCheckOut);
+const aCheckoutCar = document.createElement("a");
+aCheckoutCar.id = "aCheckoutCar";
+aCheckoutCar.setAttribute("href", "pages/cesta.html");
+aCheckoutCar.textContent = "Ver pedido";
+divContainerButtonCheckOut.appendChild(aCheckoutCar);
+
+const aClearCar = document.createElement("a");
+aClearCar.id = "aClearCar";
+aClearCar.textContent = "Limpiar cesta";
+divContainerButtonCheckOut.appendChild(aClearCar);
+
+const imgCarr = document.querySelector("#imgCarr");
+
+imgCarr.addEventListener("click", () => {
+  if (minicar.style.visibility === "visible") {
+    minicar.style.visibility = "hidden";
+  } else {
+    minicar.style.visibility = "visible";
+  }
+});
+const coffeArrCar = [];
 const cardsContainer = document.querySelector("#cardsContainer");
 
 coffes.forEach((coffe) => {
@@ -11,7 +53,7 @@ coffes.forEach((coffe) => {
   cardsContainer.appendChild(divCard);
 
   const imgCard = document.createElement("img");
-  imgCard.src = "/"+ coffe.coffeImg;
+  imgCard.src = "/" + coffe.coffeImg;
   imgCard.setAttribute("alt", "cafe " + coffe.coffeName);
   divCard.appendChild(imgCard);
 
@@ -44,7 +86,7 @@ coffes.forEach((coffe) => {
       price: coffe.coffePrice.toFixed(2),
       acc: 1,
     };
-    
+
     pushOrAcc(coffeSelection, coffeArrCar);
     divContainerCoffes.innerHTML = "";
     console.log(coffeArrCar);
@@ -55,7 +97,7 @@ coffes.forEach((coffe) => {
 
       const imgMiniCard = document.createElement("img");
       imgMiniCard.className = "imgMiniCard";
-      imgMiniCard.src = "/"+ order.img;
+      imgMiniCard.src = "/" + order.img;
       miniCard.appendChild(imgMiniCard);
 
       const infoMiniCard = document.createElement("div");
@@ -101,7 +143,13 @@ coffes.forEach((coffe) => {
         }
       });
     });
-    localStorage.setItem("coffeArrCar",JSON.stringify(coffeArrCar))
+    localStorage.setItem("coffeArrCar", JSON.stringify(coffeArrCar));
+  });
 });
-});
+aClearCar.addEventListener("click", () => {
+  divContainerCoffes.innerHTML = "";
+  divContainerCoffes.innerHTML = "<p id='divClear'>El carrito esta vacio</p>";
 
+  coffeArrCar.splice(0, coffeArrCar.length);
+  localStorage.clear();
+});

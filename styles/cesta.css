@@ -1,10 +1,11 @@
-body{display: flex;
+/* body{display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-end;
-}
+} */
 
 /* //////////////////////7 CESTA//////////////////// */
+/* ////////// products elections////////// */
 #basket {
   margin-top: 64px;
   display: flex;
@@ -25,6 +26,7 @@ body{display: flex;
   width: 1200px;
   min-height: 415.32px;
   gap: 24px;
+  border: yellow solid 3px;
 }
 #productTable {
   display: flex;
@@ -33,9 +35,127 @@ body{display: flex;
   min-height: 407.32px;
   padding: 8px;
   gap: 24px;
+  border: #2a5b45 solid 3px;
+}
+.deliveryOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.labelInpu {
+  display: flex;
+  flex-direction: column;
+  width: 657px;
+  min-height: 36px;
+  gap: 4px;
+}
+
+.label1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.label2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.deliveryradiusOption {
+  accent-color: #2a5b45;
+}
+.divisor {
+  border: 1px;
+  border: 1px solid #e3ded7;
+}
+
+/* /////////// total pay/////////// */
+
+#totalPayBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 360px;
+  height: 256px;
+  padding: 24px;
+  gap: 16px;
+  background: #f7f5f3;
+}
+#totalPaySection {
+  display: flex;
+  flex-direction: column;
+
+  /* width: Hug (336px)px;
+height: Hug (176px)px; */
+  gap: 16px;
+}
+#titlepay {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+#ButtonsPay {
+  display: flex;
+  width: 310px;
+  height: 40px;
+  gap: 16px;
+}
+#buttonkCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  height: 40px;
+  border-radius: 4px;
+  background: #2a5b45;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+#buttonShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #2a5b45;
+}
+.infoPay {
+  display: flex;
+  justify-content: space-between;
+}
+.subTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+#totalTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+#totalIVA{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#IVA {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #515051;
 }
 /* /////////////////////footer////////////// */
-#copyraightFooter{
-color: white;
-
+#copyraightFooter {
+  color: white;
 }
