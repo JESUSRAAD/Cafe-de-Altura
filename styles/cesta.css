@@ -26,8 +26,8 @@
   width: 1200px;
   min-height: 415.32px;
   gap: 24px;
-  border: yellow solid 3px;
 }
+/* //////////////////////// pruducts //////////////////// */
 #productTable {
   display: flex;
   flex-direction: column;
@@ -35,8 +35,77 @@
   min-height: 407.32px;
   padding: 8px;
   gap: 24px;
-  border: #2a5b45 solid 3px;
 }
+#ordercoutainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.purchaseCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 776px;
+  gap: 24px;
+}
+
+.purchaseBtnsCountainer {
+  display: flex;
+  gap: 8px;
+}
+.btnLessMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.iconAcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 200px;
+  background: #2a5b451a;
+  color: #2a5b45;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.purchasePicture {
+  width: 55.66px;
+  height: 55.66px;
+}
+.purchaseInfo{
+
+    width:  776px;
+min-height:  55.66px;
+gap: 24px;
+
+
+}
+.productName {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.productQuantity {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.purchasePriceTotal{
+
+font-size: 18px;
+font-weight: 600;
+line-height: 24px;
+
+
+}
+
+/* ///////////////////////// send options//////////////////////////// */
 .deliveryOption {
   display: flex;
   justify-content: center;
@@ -144,16 +213,23 @@ height: Hug (176px)px; */
   font-weight: 600;
   line-height: 16px;
 }
-#totalIVA{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+#totalIVA {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
 }
 #IVA {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: #515051;
+}
+.paidContent{
+font-size: 14px;
+font-weight: 600;
+line-height: 16px;
+
 }
 /* /////////////////////footer////////////// */
 #copyraightFooter {

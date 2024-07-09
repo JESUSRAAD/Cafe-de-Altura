@@ -16,14 +16,14 @@
   </head>
   <body>
     <nav>
-      <div id="logo">
+      <a href="/idex.html" id="logo">
         <p id="titleDirection">cafedealtura.com</p>
         <img
           id="exportCoffeeHot"
           src="/assets/img/ps_coffee-hot.png"
           alt="coffeeHot"
         />
-      </div>
+      </a>
       <ul id="listMenuWrapper">
         <li><a href="tienda.html">Tienda</a></li>
         <li><a href="">Suscripción</a></li>
@@ -54,13 +54,15 @@
       <div id="purchase">
         <div id="productTable">
           <h3 class="title">Procuctos</h3>
-          <div id="ordercoutainer"></div>
+          <div id="ordercoutainer">
+
+          </div>
           <h3 class="title" for="payMethod">Seleccionar envío</h3>
           <div class="deliveryOption">
             <input
               class="deliveryradiusOption"
               name="send"
-              class="pointGreen"
+            value="GRATIS"
               type="radio"
             />
             <label class="labelInpu" for="7day"
@@ -76,7 +78,8 @@
             <input
               class="deliveryradiusOption"
               name="send"
-              class="pointGreen"
+            checked
+            value="9,00 €"
               type="radio"
             />
             <label class="labelInpu" for="24h"
@@ -96,12 +99,12 @@
 
             <div class="infoPay">
               <div class="subTitle">SUBTOTAL</div>
-              <div></div>
+              <div id="paidQuantity" class="paidContent"></div>
             </div>
 
             <div class="infoPay">
               <div class="subTitle">ENVÍO</div>
-              <div></div>
+              <div id="sendQuantity" class="paidContent"></div>
             </div>
 
             <hr class="divisor" />
@@ -109,8 +112,10 @@
             <div class="infoPay">
               <div id="totalTitle">TOTAL</div>
               <div id="totalIVA">
-                <p id="totalPay"></p>
-                <p id="IVA">Incluye 3,78€ de IVA</p>
+                <p id="totalQuantity" class="paidContent">
+
+                </p>
+                <p id="IVA"></p>
               </div>
             </div>
           </div>

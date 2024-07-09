@@ -1,6 +1,8 @@
 import { coffes } from "./data.js";
 import { pushOrAcc } from "./data.js";
 
+
+
 ////////////////////////CARRITO///////////////////////
 const minicar = document.createElement("div");
 minicar.id = "minicar";
@@ -26,7 +28,7 @@ divContainerButtonCheckOut.id = "divContainerButtonCheckOut";
 minicar.appendChild(divContainerButtonCheckOut);
 const aCheckoutCar = document.createElement("a");
 aCheckoutCar.id = "aCheckoutCar";
-aCheckoutCar.setAttribute("href", "pages/cesta.html");
+aCheckoutCar.setAttribute("href", "/pages/cesta.html");
 aCheckoutCar.textContent = "Ver pedido";
 divContainerButtonCheckOut.appendChild(aCheckoutCar);
 
@@ -41,17 +43,83 @@ imgCarr.addEventListener("click", () => {
   if (minicar.style.visibility === "visible") {
     minicar.style.visibility = "hidden";
   } else {
+   
     minicar.style.visibility = "visible";
   }
+  if (divContainerCoffes.innerHTML === "") {
+    divContainerCoffes.innerHTML = "<p id='divClear'>El carrito esta vacio</p>";
+  }
 });
-const coffeArrCar = [];
+
+////////////////////contenido precargado carroito/////////////////
+
 const cardsContainer = document.querySelector("#cardsContainer");
+const coffeArrCar = JSON.parse(localStorage.getItem("coffeArrCar")) ?? [];
+console.log(coffeArrCar);
+
+coffeArrCar.forEach((order) => {
+    const miniCard = document.createElement("div");
+    miniCard.className = "miniCard";
+
+    const imgMiniCard = document.createElement("img");
+    imgMiniCard.className = "imgMiniCard";
+    imgMiniCard.src = "/" + order.img;
+    miniCard.appendChild(imgMiniCard);
+    
+    const infoMiniCard = document.createElement("div");
+    infoMiniCard.className = "infoMiniCard";
+    miniCard.appendChild(infoMiniCard);
+    
+    const nameCard = document.createElement("p");
+    nameCard.className = "nameCard";
+    nameCard.textContent = order.name;
+    infoMiniCard.appendChild(nameCard);
+    
+    const priceCard = document.createElement("p");
+    priceCard.className = "priceCard";
+    priceCard.textContent = order.price + "€";
+    infoMiniCard.appendChild(priceCard);
+    
+    const accAndBtnX = document.createElement("div");
+    accAndBtnX.className = "accAndBtnX";
+    miniCard.appendChild(accAndBtnX);
+    
+    const acc = document.createElement("p");
+    acc.className = "acc";
+    acc.textContent = order.acc;
+    accAndBtnX.appendChild(acc);
+
+    const btnMiniCard = document.createElement("button");
+    btnMiniCard.className = "buttoMiniCardStyle";
+    btnMiniCard.textContent = "x";
+    // btnMiniCard.innerHTML = "<img id='exportCoffeeHot' src='assets/img/ps_coffee-hot.png' alt='coffeeHot'/>";
+    
+    accAndBtnX.appendChild(btnMiniCard);
+    
+    divContainerCoffes.appendChild(miniCard);
+    
+    btnMiniCard.addEventListener("click", (event) => {
+        if (order.acc === 1) {
+            event.target.parentElement.parentElement.remove();
+            let indexArr = coffeArrCar.indexOf(order);
+            coffeArrCar.splice(indexArr, 1);
+            localStorage.setItem("coffeArrCar", JSON.stringify(coffeArrCar));
+            
+        } else {
+            order.acc--;
+            acc.textContent = order.acc;
+            localStorage.setItem("coffeArrCar", JSON.stringify(coffeArrCar));
+        }
+    });
+});
+
+///////////////////////productos/////////////////////////
 
 coffes.forEach((coffe) => {
-  const divCard = document.createElement("div");
+    const divCard = document.createElement("div");
   divCard.className = "product";
   cardsContainer.appendChild(divCard);
-
+  
   const imgCard = document.createElement("img");
   imgCard.src = "/" + coffe.coffeImg;
   imgCard.setAttribute("alt", "cafe " + coffe.coffeName);
@@ -90,6 +158,7 @@ coffes.forEach((coffe) => {
     pushOrAcc(coffeSelection, coffeArrCar);
     divContainerCoffes.innerHTML = "";
     console.log(coffeArrCar);
+    
 
     coffeArrCar.forEach((order) => {
       const miniCard = document.createElement("div");
@@ -137,9 +206,12 @@ coffes.forEach((coffe) => {
           event.target.parentElement.parentElement.remove();
           let indexArr = coffeArrCar.indexOf(order);
           coffeArrCar.splice(indexArr, 1);
+          localStorage.setItem("coffeArrCar", JSON.stringify(coffeArrCar));
+
         } else {
           order.acc--;
           acc.textContent = order.acc;
+          localStorage.setItem("coffeArrCar", JSON.stringify(coffeArrCar));
         }
       });
     });
@@ -153,3 +225,4 @@ aClearCar.addEventListener("click", () => {
   coffeArrCar.splice(0, coffeArrCar.length);
   localStorage.clear();
 });
+

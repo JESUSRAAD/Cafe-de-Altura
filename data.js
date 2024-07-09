@@ -57,15 +57,38 @@ export const coffes = [
   },
 ];
 export const pushOrAcc = (newObjet, arr) => {
-      const encontrado = arr.reduce((encontrado, elementArray) => {
-        if (elementArray.id === newObjet.id) {
-          elementArray.acc++;
-          return true;
-        }
-        return encontrado;
-      }, false);
-      if (!encontrado) {
-        arr.push(newObjet);
-      }
-      return arr;
-    };
+  const encontrado = arr.reduce((encontrado, elementArray) => {
+    if (elementArray.id === newObjet.id) {
+      elementArray.acc++;
+      return true;
+    }
+    return encontrado;
+  }, false);
+  if (!encontrado) {
+    arr.push(newObjet);
+  }
+  return arr;
+};
+
+export const subTotal = (arr) => {
+  const subTotalArr = [...arr];
+  subTotalArr.forEach((item) => {
+    item.totalPay = (item.acc * item.price).toFixed(2);
+  });
+  const subTotal= subTotalArr.reduce((total, item) =>total +parseFloat( item.totalPay),0);
+
+  return subTotal;
+};
+
+
+export const IVATotal = (arr) => {
+  const IVATotalArr = [...arr];
+  
+  IVATotalArr.forEach((item) => {
+    item.totalIVA = ((item.price*21)/100 ).toFixed(2)* item.acc;
+  });
+  const subTotal= IVATotalArr.reduce((total, item) =>total +parseFloat( item.totalIVA),0);
+
+  return subTotal;
+};
+
